@@ -28,8 +28,8 @@
 
   /*========== Margenes ==========*/
   --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
+  --mb-2: .5rem;
+  --mb-3: 1rem;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -67,6 +67,17 @@ body.dark-theme{
 
 .change-theme:hover{
   color: var(--text-color);
+}
+
+/*========== Button Change language ==========*/
+.change-language{
+  position: absolute;
+  left: 0;
+  top: 2.2rem;
+  display: flex;
+/*  color: var(--text-color);*/
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /*========== Font size variables to scale cv ==========*/
@@ -184,7 +195,7 @@ img{
   counter-reset: var(--title-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.15rem;
   text-align: center;
   margin-bottom: var(--mb-3);
 }
@@ -618,4 +629,12 @@ img{
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
+}
+
+a[href^="http"]:not(.social__link){
+  text-decoration: underline;
+}
+
+.about__container>p{
+  text-indent: 1rem;
 }
